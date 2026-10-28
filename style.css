@@ -69,9 +69,139 @@ body{
     text-align: center;
 }
 
+.hero h6{
+    text-align: center;
+}
+
 .form-section{
     display: flex;
     justify-content: space-between;
     background-color: rgba(238, 226, 238, 0.329);
     padding: 2rem 10rem;
+}
+
+.form-section h4{
+    color: #E0B552;
+    font-size: 11px;
+}
+
+.form-section h3{
+    font-size: 40px;
+    margin: -5px 0 0 0;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-section button{
+    background-color: #FAB700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.form-section p{
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+.form-section form {
+    width: 290px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("form-bg.avif");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.form-section form h2 {
+    margin: 0 0 12px;
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+/* Remove excess spacing between fields */
+.form-section form select,
+.form-section form input:not([type="submit"]),
+.form-section form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0 !important;
+    margin-bottom: 3px 
+    padding: 8px 10px;
+
+    background: transparent !important;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Compact field heights */
+.form-section form select,
+.form-section form input:not([type="submit"]) {
+    height: 36px;
+}
+
+/* Dropdown options */
+.form-section form select option {
+    background: #333;
+    color: white;
+}
+
+/* Placeholder text */
+.form-section form input::placeholder,
+.form-section form textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* Message box */
+.form-section form textarea {
+    height: 90px;
+    resize: both;
+}
+
+/* Yellow button */
+.form-section form input[type="submit"],
+.form-section form button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 2px 0 0 !important;
+    padding: 12px 8px;
+
+    background: #ffb900;
+    color: black;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }
